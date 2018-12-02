@@ -297,6 +297,9 @@ footer {
     #subheader {
         font-size: 10px;
     }
+    .powr-mailing-list {
+        display: none;
+    }
 }
 
 
@@ -331,6 +334,9 @@ footer {
     #sports {
         display: none;
     }
+    .powr-mailing-list {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 351px) and (min-width: 321px) {
@@ -338,6 +344,9 @@ footer {
         background-image: url(images/header-rotated.jpg);
         background-size: contain;
 
+    }
+    .powr-mailing-list {
+        display: none;
     }
 
     #title {
@@ -357,6 +366,9 @@ footer {
         background-image: url(images/header-rotated.jpg);
         background-size: contain;
 
+    }
+    .powr-mailing-list {
+        display: none;
     }
 
     #title {
