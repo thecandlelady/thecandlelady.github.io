@@ -327,6 +327,10 @@ footer {
     #subheader {
         font-size: 9px;
     }
+    
+    #sports {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 351px) and (min-width: 321px) {
@@ -342,6 +346,9 @@ footer {
 
     #subheader {
         font-size: 8px;
+    }
+     #sports {
+        display: none;
     }
 }
 
@@ -359,3 +366,7 @@ footer {
     #subheader {
         font-size: 7px;
     }
+     #sports {
+        display: none;
+    }
+}
