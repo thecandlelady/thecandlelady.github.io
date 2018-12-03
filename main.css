@@ -15,7 +15,7 @@
 html {
     background: rgb(48, 48, 48);
     background-image: url(images/header.jpg);
-    background-size: cover;
+    background-position: center 30%;
     background-repeat: no-repeat;
     height: 100vh;
     width: 100vw;
@@ -234,7 +234,169 @@ footer {
     text-align: center;
 }
 
-@media only screen and (max-width: 1412px) and (min-width: 498px) {
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    /* Styles */
+    html {
+        background-image: url(images/header-rotated.jpg);
+        background-size: cover;
+        background-position: center 0;
+
+
+    }
+
+    .powr-mailing-list {
+        display: none;
+    }
+
+    #title {
+        font-size: 20px;
+        display: flex;
+    }
+
+    #subheader {
+        font-size: 7px;
+    }
+
+    #sports {
+        display: none;
+    }
+
+    .slicknav_menu {
+        text-align: left;
+        display: block;
+        float: left;
+        width: 100%;
+    }
+
+    #nav_menu {
+        display: none;
+    }
+
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) and (orientation: landscape) {
+
+    /* Styles */
+    html {
+        background-image: url(images/header.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+    }
+
+    #sports {
+        display: none;
+    }
+
+    #banner {
+        font-size: 75%;
+        margin-top: -40px;
+    }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+
+    /* Styles */
+    html {
+        background-image: url(images/header-rotated.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+    .powr-mailing-list {
+        display: none;
+    }
+
+    #title {
+        font-size: 20px;
+    }
+
+    #subheader {
+        font-size: 8px;
+    }
+
+    #sports {
+        display: none;
+    }
+
+    .slicknav_menu {
+        text-align: left;
+        display: block;
+        float: left;
+        width: 100%;
+    }
+
+    #nav_menu {
+        display: none;
+    }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+    /* Styles */
+    html {
+        background: rgb(48, 48, 48);
+        background-image: url(images/header.jpg);
+        background-size: cover;
+        background-position: center 30%;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100vw;
+
+    }
+    
+    #banner_bogo {
+        margin-top: -250px;
+    }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    /* Styles */
+    #sports {
+        display: none;
+    }
+    
+    #banner {
+        display: block;
+        text-align: center;
+        margin-top: 300px;
+    }
+
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    /* Styles */
+}
+@media only screen and (min-device-width : 1024px) and (max-device-width : 1366px) and (orientation : portrait) {
+    /* Styles */
+    #banner_bogo {
+        margin-top: -500px;
+    }
+}
+/**********
+iPad 3
+**********/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+    /* Styles */
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+    /* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+
+
     #banner {
         padding-top: 150px;
     }
@@ -258,7 +420,9 @@ footer {
     }
 
 
-    #sports {}
+    #sports {
+        display: block;
+    }
 
     #nav_menu {
         display: none;
@@ -297,12 +461,77 @@ footer {
     }
 }
 
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+    /* Styles */
+}
 
-@media only screen and (max-width: 498px) and (min-width:351px) {
+/* iPhone 4 ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+    /* Styles */
+}
 
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+    /* Styles */
+}
+
+/* iPhone 5 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2) {
+
+    /* Styles */
+    html {
+        background: rgb(48, 48, 48);
+        background-image: url(images/header.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100vw;
+
+    }
+
+    #banner {
+        font-size: 40%;
+        margin-top: -50px;
+    }
+
+    #banner_shop {
+        margin-top: -0.02px;
+    }
+
+    #subheader a {
+        font-size: 75%;
+    }
+
+    #title {
+        display: flex;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2) {
+
+    /* Styles */
     html {
         background-image: url(images/header-rotated.jpg);
-        background-size: contain;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+    #title {
+        display: flex;
+    }
+
+}
+
+
+
+
+/* iPhone 6, 7, 8 ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2) {
+
+    /* Styles */
+    html {
+        background-image: url(images/header.jpg);
+        background-size: cover;
 
     }
 
@@ -323,62 +552,101 @@ footer {
     }
 
     #subheader {
-        font-size: 9px;
+        font-size: 100%;
     }
 
     #sports {
         display: none;
     }
 
+    .powr-mailing-list {
+        display: none;
+    }
+
+    #banner {
+        font-size: 100%;
+        margin-top: 5px;
+    }
+
+    #banner_shop {
+        margin-top: 5px;
+    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2) {
+
+    /* Styles */
+    #subheader {
+        font-size: 70%;
+    }
+
+}
+
+/* iPhone 6+, 7+, 8+ ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2) {
+    /* Styles */
+
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2) {
+
+    /* Styles */
+    .powr-mailing-list {
+        display: none;
+    }
+
+
+}
+
+/* iPhone X ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3) {
+
+    /* Styles */
     .powr-mailing-list {
         display: none;
     }
 }
 
-@media only screen and (max-width: 351px) and (min-width: 321px) {
-    html {
-        background-image: url(images/header-rotated.jpg);
-        background-size: contain;
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3) {
 
-    }
-
-    .powr-mailing-list {
-        display: none;
-    }
-
-    #title {
-        font-size: 20px;
-    }
-
+    /* Styles */
     #subheader {
-        font-size: 8px;
-    }
-
-    #sports {
-        display: none;
+        font-size: 70%;
     }
 }
 
-@media only screen and (max-width: 321px) {
-    html {
-        background-image: url(images/header-rotated.jpg);
-        background-size: contain;
+/* iPhone XS Max, XR ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3) {
+    /* Styles */
+}
 
-    }
+@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3) {
+    /* Styles */
+}
 
-    .powr-mailing-list {
-        display: none;
-    }
+/* Samsung Galaxy S3 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2) {
+    /* Styles */
+}
 
-    #title {
-        font-size: 20px;
-    }
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2) {
+    /* Styles */
+}
 
-    #subheader {
-        font-size: 7px;
-    }
+/* Samsung Galaxy S4 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3) {
+    /* Styles */
+}
 
-    #sports {
-        display: none;
-    }
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3) {
+    /* Styles */
+}
+
+/* Samsung Galaxy S5 ----------- */
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3) {
+    /* Styles */
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3) {
+    /* Styles */
 }
