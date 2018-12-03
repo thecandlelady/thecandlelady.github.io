@@ -291,10 +291,15 @@ footer {
     #sports {
         display: none;
     }
+    
+    .powr-mailing-list {
+        display: none;
+    }
 
     #banner {
         font-size: 75%;
         margin-top: -40px;
+        display: none
     }
 }
 
