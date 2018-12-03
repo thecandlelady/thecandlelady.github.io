@@ -351,7 +351,7 @@ footer {
         width: 100vw;
 
     }
-    
+
     #banner_bogo {
         margin-top: -250px;
     }
@@ -359,11 +359,12 @@ footer {
 
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+
     /* Styles */
     #sports {
         display: none;
     }
-    
+
     #banner {
         display: block;
         text-align: center;
@@ -376,12 +377,15 @@ footer {
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
     /* Styles */
 }
+
 @media only screen and (min-device-width : 1024px) and (max-device-width : 1366px) and (orientation : portrait) {
+
     /* Styles */
     #banner_bogo {
         margin-top: -500px;
     }
 }
+
 /**********
 iPad 3
 **********/
@@ -583,8 +587,10 @@ iPad 3
 }
 
 /* iPhone 6+, 7+, 8+ ----------- */
-@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation :landscape) and (-webkit-device-pixel-ratio: 2) {
+
     /* Styles */
+    #banner {}
 
 }
 
@@ -604,6 +610,21 @@ iPad 3
     /* Styles */
     .powr-mailing-list {
         display: none;
+    }
+
+    #banner_bogo {
+        display: flex;
+        padding-left: 38vw;
+    }
+
+    #banner_shop {
+        display: flex;
+        margin-top: -10px;
+    }
+
+    #banner {
+        display: none;
+        margin-top: 200px;
     }
 }
 
