@@ -14,7 +14,8 @@
 
 html {
     background: rgb(48, 48, 48);
-    background-image: url(../images/header.jpg);
+    background-image: url(../images/christmas-1911637.jpg);
+    background-attachment: fixed;
     background-position: center 30%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -24,6 +25,7 @@ html {
 }
 
 body {
+    
     font-family: 'Montserrat', sans-serif;
     /*    background: rgb(48, 48, 48);*/
 
@@ -47,8 +49,7 @@ header {
     font-family: 'Lora', serif;
     font-size: 70%;
     font-weight: lighter;
-    color: white;
-    /*    background: #303030;*/
+    color:#ffe4c9;    /*    background: #303030;*/
     justify-content: center;
     width: 100%;
     ;
@@ -66,7 +67,7 @@ header {
     display: inline-flex;
     text-align: center;
     align-content: center;
-    margin: 30px 20px 0px 20px;
+    margin: 75px 20px 0px 20px;
     text-transform: uppercase;
     letter-spacing: 3px;
     padding-left: 3.2vw;
@@ -105,7 +106,7 @@ header {
 
 #title h1 {
     font-weight: lighter;
-    background: #fccccc -webkit-gradient(linear, left top, right top, from(#bebebe), to(#bebebe), color-stop(0.5, #fff)) 0 0 no-repeat;
+    background: #ff0000 -webkit-gradient(linear, left top, right top, from(#496941), to(#496941), color-stop(0.5, #288008)) 0 0 no-repeat;
     -webkit-background-size: 150px;
     color: rgba(255, 255, 255, 0);
     -webkit-background-clip: text;
@@ -151,9 +152,9 @@ header {
 .menubar li {
 
     padding: 10px;
-    padding-right: 10vw;
+    padding-right: 8vw;
     /*    margin-right: 10vw;*/
-    padding-left: 10vw;
+    padding-left: 8vw;
     text-align: center;
     display: inline;
     cursor: pointer;
@@ -168,7 +169,7 @@ header {
 }
 
 .menubar li a {
-    color: white;
+    color:#ffffff;
     font-weight: lighter;
     -webkit-font-smoothing: antialiased;
     text-decoration: none;
@@ -208,7 +209,7 @@ header {
 
 #banner_shop {
     color: white;
-    margin-top: 5px;
+    margin-top: 10px;
     text-align: center;
     display: inline-flex;
     width: 100vw;
@@ -222,7 +223,7 @@ header {
     font-weight: 600;
     color: white;
     text-decoration: none;
-    border: 1px solid white;
+    border: 5px solid white;
 
 }
 
@@ -251,7 +252,7 @@ footer {
 
     /* Styles */
     html {
-        background-image: url(../images/header-rotated.jpg);
+        background-image: url(../images/christmas-1911637.jpg);
         background-size: cover;
         background-position: center 0;
 
@@ -302,7 +303,7 @@ footer {
 
     /* Styles */
     html {
-        background-image: url(../images/header.jpg);
+        background-image: url(../images/christmas-1911637.jpg);
         background-size: cover;
         background-position: center;
         width: 100vw;
@@ -343,7 +344,7 @@ footer {
 
     /* Styles */
     html {
-        background-image: url(../images/header-rotated.jpg);
+        background-image: url(../images/christmas-1911637.jpg);
         background-size: cover;
         background-repeat: no-repeat;
 
@@ -441,7 +442,7 @@ footer {
     /* Styles */
     html {
         background: rgb(48, 48, 48);
-        background-image: url(../images/header.jpg);
+        background-image: url(../images/christmas-1911637.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -482,7 +483,7 @@ footer {
 
     /* Styles */
     html {
-        background-image: url(../images/header-rotated.jpg);
+        background-image: url(../images/christmas-1911637.jpg);
         background-size: cover;
         background-repeat: no-repeat;
 
@@ -515,7 +516,7 @@ footer {
 
     /* Styles */
     html {
-        background-image: url(../images/header.jpg);
+        background-image: url(../images/christmas-1911637.jpg);
         background-size: cover;
 
     }
@@ -575,7 +576,7 @@ footer {
 
     /* Styles */
     html {
-        background-image: url(../images/header.jpg);
+        background-image: url(../images/christmas-1911637.jpg);
         background-size: cover;
         background-position: center 0;
     }
