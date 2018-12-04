@@ -16,7 +16,7 @@ html {
     background: rgb(48, 48, 48);
     background-image: url(../images/christmas-1911637.jpg);
     background-attachment: fixed;
-    background-position: center 30%;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -52,13 +52,9 @@ header {
     color:#ffe4c9;    /*    background: #303030;*/
     justify-content: center;
     width: 100%;
-    ;
+    
 
     /*    border-bottom: 2px solid white;*/
-}
-
-#subheader a:hover {
-    border-bottom: 0.1px solid white;
 }
 
 #subheader a {
@@ -73,6 +69,12 @@ header {
     padding-left: 3.2vw;
     padding-right: 4vw;
 }
+
+
+#subheader a:hover {
+    border-bottom: 0.1px solid white;
+}
+
 
 #subheader i {
     text-align: center;
@@ -160,10 +162,10 @@ header {
     cursor: pointer;
     position: relative;
     font-weight: 600;
-    /*
-    border: 1px solid #fccccc;
-    border-radius: 10px;
-*/
+    
+    border: 2px solid white;
+    border-radius: 5px;
+
 
 
 }
@@ -177,6 +179,7 @@ header {
 }
 
 .menubar li:hover {
+    transition: 0.3s;
     background: #353847;
 }
 
@@ -228,7 +231,8 @@ header {
 }
 
 .btn-main:hover {
-    background: grey;
+    transition: 0.3s;
+    background: black;
 }
 
 #sports {
