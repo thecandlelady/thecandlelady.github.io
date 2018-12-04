@@ -1,0 +1,663 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Lora');
+@import url('https://fonts.googleapis.com/css?family=Cedarville+Cursive');
+
+
+* {
+    margin: auto;
+    padding: 0;
+    border: 0;
+    list-style: none;
+
+
+}
+
+html {
+    background: rgb(48, 48, 48);
+    background-image: url(../images/header.jpg);
+    background-position: center 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    /*    background: rgb(48, 48, 48);*/
+
+
+    /* <------ */
+    height: 130px;
+    /*    margin-top: -4px;*/
+    width: 100%;
+}
+
+header {
+    text-align: center;
+    /*    background: #111111;*/
+    width: 100%;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#subheader {
+    font-family: 'Lora', serif;
+    font-size: 70%;
+    font-weight: lighter;
+    color: white;
+    /*    background: #303030;*/
+    justify-content: center;
+    width: 100%;
+    ;
+
+    /*    border-bottom: 2px solid white;*/
+}
+
+#subheader a:hover {
+    border-bottom: 0.1px solid white;
+}
+
+#subheader a {
+    color: inherit;
+    text-decoration: none;
+    display: inline-flex;
+    text-align: center;
+    align-content: center;
+    margin: 30px 20px 0px 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding-left: 3.2vw;
+    padding-right: 4vw;
+}
+
+#subheader i {
+    text-align: center;
+    width: 100%;
+    font-size: 150%;
+    margin: 10px 0px 10px -6px;
+}
+
+
+#title {
+    display: flex;
+    width: 100vw;
+    font-family: 'Cedarville Cursive', cursive;
+    font-weight: 100;
+    font-size: 225%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    /*
+        background-image: url(header.jpg);
+    background-size: cover;
+     <------ 
+    background-repeat: no-repeat;
+    background-position: center 30%;
+*/
+    height: 130px;
+}
+
+
+
+#title h1 {
+    font-weight: lighter;
+    background: #fccccc -webkit-gradient(linear, left top, right top, from(#bebebe), to(#bebebe), color-stop(0.5, #fff)) 0 0 no-repeat;
+    -webkit-background-size: 150px;
+    color: rgba(255, 255, 255, 0);
+    -webkit-background-clip: text;
+    -webkit-animation-name: shine;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+    text-shadow: 0 0px 0px rgba(255, 255, 255, 0.5);
+}
+
+@-webkit-keyframes shine {
+
+    0%,
+    10% {
+        background-position: -50px;
+    }
+
+    20% {
+        background-position: top left;
+    }
+
+    90% {
+        background-position: top right;
+    }
+
+    100% {
+        background-position: 250px;
+    }
+}
+
+.menubar {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    /*    background: black;*/
+    padding: 0;
+    margin-top: 0;
+    display: inline-block;
+
+
+}
+
+.menubar li {
+
+    padding: 10px;
+    padding-right: 10vw;
+    /*    margin-right: 10vw;*/
+    padding-left: 10vw;
+    text-align: center;
+    display: inline;
+    cursor: pointer;
+    position: relative;
+    font-weight: 600;
+    /*
+    border: 1px solid #fccccc;
+    border-radius: 10px;
+*/
+
+
+}
+
+.menubar li a {
+    color: white;
+    font-weight: lighter;
+    -webkit-font-smoothing: antialiased;
+    text-decoration: none;
+
+}
+
+.menubar li:hover {
+    background: #353847;
+}
+
+.slicknav_menu {
+    display: none;
+}
+
+#banner {
+    display: flex;
+    /*    background-image: url(christmas.jpg);*/
+    /*    background-size: cover;*/
+    /* <------ */
+    /*
+    background-repeat: no-repeat;
+    background-position: center 30%;
+*/
+    height: auto;
+    margin-top: 2vh;
+}
+
+#banner_bogo {
+    color: white;
+    font-weight: bol;
+    line-height: 25px;
+    text-align: center;
+    justify-content: center;
+    display: inline-flex;
+    width: 100vw;
+}
+
+#banner_shop {
+    color: white;
+    margin-top: 5px;
+    text-align: center;
+    display: inline-flex;
+    width: 100vw;
+
+}
+
+.btn-main {
+    padding: 16px 60px;
+    cursor: pointer;
+    position: relative;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+
+}
+
+.btn-main:hover {
+    background: grey;
+}
+
+#sports {
+    display: inline-block;
+    height: 80vh;
+}
+
+footer {
+    position: absolute;
+    bottom: -50vh;
+    width: 100%;
+    height: 100px;
+    background: rgb(48, 48, 48);
+    color: white;
+    text-align: center;
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 490px) {
+
+    /* Styles */
+    html {
+        background-image: url(../images/header-rotated.jpg);
+        background-size: cover;
+        background-position: center 0;
+
+
+    }
+
+    .powr-mailing-list {
+        display: none;
+    }
+
+    #title {
+        font-size: 20px;
+        display: flex;
+    }
+
+    #subheader {
+        font-size: 65%;
+    }
+
+    #sports {
+        display: none;
+    }
+
+    .slicknav_menu {
+        text-align: left;
+        display: block;
+        float: left;
+        width: 100%;
+    }
+
+    #nav_menu {
+        display: none;
+    }
+
+    #banner_shop {
+        width: 100vw;
+    }
+
+    #banner_bogo {
+        width: 100vw;
+    }
+
+}
+
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (max-width : 740px) and (orientation: landscape) {
+
+    /* Styles */
+    html {
+        background-image: url(../images/header.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+    }
+
+    #sports {
+        display: none;
+    }
+
+    .powr-mailing-list {
+        display: none;
+    }
+
+    #banner_shop {
+        width: 100vw;
+    }
+
+    #banner_bogo {
+        width: 100vw;
+        font-size: 75%;
+    }
+
+    #subheader a {
+        font-size: 80%;
+    }
+
+    .menubar {
+        display: none;
+    }
+
+    .slicknav_menu {
+        display: block;
+    }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 768px) and (orientation: portrait) {
+
+    /* Styles */
+    html {
+        background-image: url(../images/header-rotated.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+    .powr-mailing-list {
+        display: none;
+    }
+
+    #title {
+        font-size: 20px;
+    }
+
+    #subheader {
+        font-size: 50%;
+    }
+    
+    #subheader a {
+        margin: 7px;
+    }
+
+    #sports {
+        display: none;
+    }
+
+    .slicknav_menu {
+        text-align: left;
+        display: block;
+        float: left;
+        width: 100%;
+    }
+
+    #nav_menu {
+        display: none;
+    }
+
+    #banner_shop {
+        width: 100vw;
+    }
+
+    #banner_bogo {
+        width: 100vw;
+    }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+    /* Styles */
+
+    #banner_shop {
+
+        width: 100vw;
+    }
+
+    #banner_bogo {
+        width: 100vw;
+    }
+
+    .menubar li {
+        width: 2vw;
+    }
+
+
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 823px) and (orientation : landscape) {
+
+    /* Styles */
+
+    #sports {
+        display: block;
+    }
+
+    #banner {
+        text-align: center;
+    }
+
+    .menubar {
+        display: none;
+    }
+
+    .slicknav_menu {
+        display: block;
+    }
+
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1286px) and (orientation : portrait) {
+
+    /* Styles */
+    html {
+        background: rgb(48, 48, 48);
+        background-image: url(../images/header.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100vw;
+
+    }
+
+    #banner_bogo {
+        margin-top: -280px;
+    }
+
+    .menubar {
+        display: none;
+    }
+
+    .slicknav_menu {
+        display: block;
+    }
+    #sports {
+        display: block;
+    }
+}
+
+/*
+@media only screen and (min-device-width : 1024px) and (max-device-width : 1366px) and (orientation : portrait) {
+
+    Styles #banner_bogo {
+        margin-top: -500px;
+    }
+}
+
+
+*/
+
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2) {
+
+    /* Styles */
+    html {
+        background-image: url(../images/header-rotated.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+    #title {
+        display: flex;
+    }
+
+}
+
+
+/* iPhone 5 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2) {
+
+
+
+    #banner {
+        font-size: 800%;
+        text-align: center;
+    }
+
+    #title {
+        display: flex;
+    }
+}
+
+/* iPhone 6, 7, 8 ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2) {
+
+    /* Styles */
+    html {
+        background-image: url(../images/header.jpg);
+        background-size: cover;
+
+    }
+
+    #nav_menu {
+        display: none;
+    }
+
+    #mobilemenu {
+        text-align: left;
+    }
+
+    .slicknav_menu {
+        display: block;
+    }
+
+    #title {
+        font-size: 24px;
+    }
+
+    #subheader {
+        font-size: 100%;
+    }
+
+    #sports {
+        display: none;
+    }
+
+    .powr-mailing-list {
+        display: none;
+    }
+}
+
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2) {
+
+    /* Styles */
+    #subheader {
+        font-size: 70%;
+    }
+
+}
+
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2) {
+
+    /* Styles */
+    .powr-mailing-list {
+        display: none;
+    }
+
+
+}
+
+/* iPhone X ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3) {
+
+    /* Styles */
+    html {
+        background-image: url(../images/header.jpg);
+        background-size: cover;
+        background-position: center 0;
+    }
+
+    .powr-mailing-list {
+        display: none;
+    }
+
+    #sports {
+        display: none;
+    }
+
+    #banner_shop {
+        width: 100vw;
+    }
+
+    #banner_bogo {
+        width: 100vw;
+    }
+    .menubar {
+        display: none;
+    }
+    .slicknav_menu {
+        display: block;
+    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3) {
+
+    /* Styles */
+    #subheader {
+        font-size: 70%;
+    }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1287px) {
+
+    #banner_shop {
+
+        width: 100vw;
+    }
+
+    #banner_bogo {
+        width: 100vw;
+    }
+
+
+    #sports {
+        display: inline-block;
+    }
+
+    .menubar {
+        display: block;
+    }
+
+    .menubar li {
+        width: 1vw;
+    }
+
+
+    #mobilemenu {
+        height: 59px;
+    }
+
+    .slicknav_menu {
+        display: none;
+    }
+
+    .slicknav_nav a {
+        text-align: left;
+        display: inline-block;
+    }
+
+    .slicknav_nav li {
+        text-align: center;
+    }
+
+    #title {
+        font-size: 40px;
+        display: flex;
+    }
+
+    #subheader {
+        font-size: 10px;
+    }
+}
