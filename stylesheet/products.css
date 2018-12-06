@@ -13,12 +13,11 @@
 }
 
 html {
-    background: rgb(48, 48, 48);
-    background-image: url(../images/christmas-1911637.jpg);
- background-attachment: fixed;
-    background-position: center 30%;
-    background-repeat: no-repeat;
+    background-image: url(../images/background.jpg);
+    background-position: center;
     background-size: cover;
+    background-repeat: repeat;
+
     height: 100vh;
     width: 100vw;
 
@@ -45,21 +44,28 @@ header {
 
 }
 
+.sub {
+    font-size: 150%;
+}
+
 #subheader {
     font-family: 'Lora', serif;
     font-size: 70%;
-    font-weight: bold;
+    font-weight: lighter;
     color: #ffe4c9;
-    /*    background: #303030;*/
-    justify-content: center;
+    background: #b52d38;
+    border: 2px solid #ffe4c9;
     width: 100%;
-    ;
 
-    /*    border-bottom: 2px solid white;*/
+}
+
+#mobilemenu {
+    background: rgb(48, 48, 48);
+
 }
 
 #subheader a:hover {
-    border-bottom: 0.1px solid white;
+    border-bottom: 4px solid white;
 }
 
 #subheader a {
@@ -68,7 +74,7 @@ header {
     display: inline-flex;
     text-align: center;
     align-content: center;
-    margin: 75px 20px 0px 20px;
+    margin: 20px 20px 20px 20px;
     text-transform: uppercase;
     letter-spacing: 3px;
     padding-left: 3.2vw;
@@ -78,12 +84,14 @@ header {
 #subheader i {
     text-align: center;
     width: 100%;
-    font-size: 150%;
+    font-size: 100%;
     margin: 10px 0px 10px -6px;
 }
 
 
 #title {
+
+    background: rgb(48, 48, 48);
     display: flex;
     width: 100vw;
     font-family: 'Cedarville Cursive', cursive;
@@ -102,7 +110,7 @@ header {
 */
     height: 130px;
     background: rgb(48, 48, 48);
-    background: url(../images/b.jpg);
+    /*    background: url(../images/b.jpg);*/
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center 0%;
@@ -142,15 +150,17 @@ header {
     }
 }
 
+
 .menubar {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: bold;
     text-align: center;
-    /*    background: black;*/
     padding: 0;
     margin-top: 0;
     display: inline-block;
+    padding-bottom: 8vh;
+        background: rgb(48, 48, 48);
 
 
 }
@@ -158,9 +168,9 @@ header {
 .menubar li {
 
     padding: 10px;
-    padding-right: 10vw;
+    padding-right: 4vw;
     /*    margin-right: 10vw;*/
-    padding-left: 10vw;
+    padding-left: 4vw;
     text-align: center;
     display: inline;
     cursor: pointer;
@@ -183,6 +193,7 @@ header {
 }
 
 .menubar li:hover {
+    transition: 0.3s;
     background: #353847;
 }
 
@@ -234,7 +245,8 @@ header {
 }
 
 .btn-main:hover {
-    background: grey;
+    transition: 0.3s;
+    background: black;
 }
 
 #sports {
@@ -242,46 +254,152 @@ header {
     height: 80vh;
 }
 
-footer {
-    position: absolute;
-    bottom: -50vh;
-    width: 100%;
-    height: 100px;
-    background: rgb(48, 48, 48);
-    color: white;
+
+
+.card-title,
+.card-text {
     text-align: center;
 }
 
-.flex-container {
+.card {
+    margin: 20px;
+}
+
+
+.btn-primary {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    text-align: center;
-    color: white;
-
-
+    align-content: center;
 }
 
-.flex-container > div {
-
-    margin: 10px;
-    padding: 20px;
-    font-size: 20px;
+.row {
+    justify-content: center;
+    align-content: center;
 }
 
-.flex-container div {
-    font-size: 1.1vw;
-    width: 12vw;
-    background: rgb(64, 82, 83);
-    box-shadow: 1px 2px 20px 1px;
+.col_white_amrc {
+    color: #FFF;
 }
 
-.flex-container img {
+.footer {
     width: 100%;
-    height: 81%;
+    background-color: #022b3a;
+    min-height: 250px;
+    padding: 10px 0px 25px 0px;
+    text-align: center;
 }
-#oddbutton {
-    
+
+.pt2 {
+    padding-top: 40px;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    font-size: 13px;
+    color: #CCC;
+    padding-bottom: 0px;
+    margin-bottom: 8px;
+}
+
+.mb10 {
+    padding-bottom: 15px;
+}
+
+.footer_ul_amrc {
+    margin: 0px;
+    list-style-type: none;
+    font-size: 14px;
+    padding: 0px 0px 10px 0px;
+}
+
+.footer_ul_amrc li {
+    padding: 0px 0px 5px 0px;
+}
+
+.footer_ul_amrc li a {
+    color: #CCC;
+}
+
+.footer_ul_amrc li a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.padding-right {
+    padding-right: 10px;
+}
+
+.footer_ul2_amrc {
+    margin: 0px;
+    list-style-type: none;
+    padding: 0px;
+}
+
+.footer_ul2_amrc li p {
+    display: table;
+}
+
+.footer_ul2_amrc li a:hover {
+    text-decoration: none;
+}
+
+.footer_ul2_amrc li i {
+    margin-top: 5px;
+}
+
+.bottom_border {
+    border-bottom: 1px solid #323f45;
+    padding-bottom: 20px;
+}
+
+.foote_bottom_ul_amrc {
+    list-style-type: none;
+    padding: 0px;
+    display: table;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-left: auto;
+}
+
+.foote_bottom_ul_amrc li {
+    display: inline;
+}
+
+.foote_bottom_ul_amrc li a {
+    color: #999;
+    margin: 0 12px;
+}
+
+.social_footer_ul {
+    display: table;
+    margin: 15px auto 0 auto;
+    list-style-type: none;
+}
+
+.social_footer_ul li {
+    padding-left: 20px;
+    padding-top: 10px;
+    float: left;
+}
+
+.social_footer_ul li a {
+    color: #CCC;
+    border: 1px solid #CCC;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.social_footer_ul li i {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+.col-sm-4 {
+    display: inline-block;
+    width: 100%;
 }
 
 
@@ -290,13 +408,7 @@ footer {
 @media only screen and (min-width : 320px) and (max-width : 490px) {
 
     /* Styles */
-    html {
-        background-image: url(../images/christmas-1911637.jpg);
-        background-size: cover;
-        background-position: center 0;
-
-
-    }
+    html {}
 
     .powr-mailing-list {
         display: none;
@@ -308,7 +420,7 @@ footer {
     }
 
     #subheader {
-        font-size: 65%;
+        font-size: 60%;
     }
 
     #sports {
@@ -316,9 +428,8 @@ footer {
     }
 
     .slicknav_menu {
-        text-align: left;
+        text-align: center;
         display: block;
-        float: left;
         width: 100%;
     }
 
@@ -342,9 +453,7 @@ footer {
 
     /* Styles */
     html {
-        background-image: url(../images/christmas-1911637.jpg);
-        background-size: cover;
-        background-position: center;
+
         width: 100vw;
     }
 
@@ -382,12 +491,7 @@ footer {
 @media only screen and (max-width : 768px) and (orientation: portrait) {
 
     /* Styles */
-    html {
-        background-image: url(../images/christmas-1911637.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-
-    }
+    html {}
 
     .powr-mailing-list {
         display: none;
@@ -398,7 +502,7 @@ footer {
     }
 
     #subheader {
-        font-size: 50%;
+        font-size: 40%;
     }
 
     #subheader a {
@@ -410,9 +514,8 @@ footer {
     }
 
     .slicknav_menu {
-        text-align: left;
+        text-align: center;
         display: block;
-        float: left;
         width: 100%;
     }
 
@@ -479,16 +582,7 @@ footer {
 @media only screen and (min-width : 768px) and (max-width : 1286px) and (orientation : portrait) {
 
     /* Styles */
-    html {
-        background: rgb(48, 48, 48);
-        background-image: url(../images/christmas-1911637.jpg);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 100vh;
-        width: 100vw;
-
-    }
+    html {}
 
     #banner_bogo {
         margin-top: -280px;
@@ -522,16 +616,12 @@ footer {
 @media only screen and (min-width: 320px) and (max-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2) {
 
     /* Styles */
-    html {
-        background-image: url(../images/christmas-1911637.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-
-    }
+    html {}
 
     #title {
         display: flex;
     }
+
 
 }
 
@@ -555,18 +645,14 @@ footer {
 @media only screen and (min-width: 375px) and (max-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2) {
 
     /* Styles */
-    html {
-        background-image: url(../images/christmas-1911637.jpg);
-        background-size: cover;
-
-    }
+    html {}
 
     #nav_menu {
         display: none;
     }
 
     #mobilemenu {
-        text-align: left;
+        text-align: center;
     }
 
     .slicknav_menu {
@@ -578,7 +664,7 @@ footer {
     }
 
     #subheader {
-        font-size: 100%;
+        font-size: 40%;
     }
 
     #sports {
@@ -615,11 +701,7 @@ footer {
 @media only screen and (min-width: 375px) and (max-height: 812px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3) {
 
     /* Styles */
-    html {
-        background-image: url(../images/christmas-1911637.jpg);
-        background-size: cover;
-        background-position: center 0;
-    }
+    html {}
 
     .powr-mailing-list {
         display: none;
@@ -644,28 +726,19 @@ footer {
     .slicknav_menu {
         display: block;
     }
+
 }
 
 @media only screen and (min-width: 375px) and (max-height: 812px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3) {
 
     /* Styles */
     #subheader {
-        font-size: 70%;
+        font-size: 50%;
     }
 }
 
 /* Desktops and laptops ----------- */
 @media only screen and (min-width : 1287px) {
-
-    #banner_shop {
-
-        width: 100vw;
-    }
-
-    #banner_bogo {
-        width: 100vw;
-    }
-
 
     #sports {
         display: inline-block;
@@ -689,7 +762,7 @@ footer {
     }
 
     .slicknav_nav a {
-        text-align: left;
+        text-align: center;
         display: inline-block;
     }
 

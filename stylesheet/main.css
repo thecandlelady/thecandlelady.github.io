@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Lora');
 @import url('https://fonts.googleapis.com/css?family=Cedarville+Cursive');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
 
 
 * {
@@ -13,19 +15,15 @@
 }
 
 html {
+    width: 100vw;
     background: rgb(48, 48, 48);
-    background-image: url(../images/christmas-1911637.jpg);
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    width: 100vw;
-
+    background-size: cover
 }
 
 body {
-    
+
     font-family: 'Montserrat', sans-serif;
     /*    background: rgb(48, 48, 48);*/
 
@@ -36,23 +34,44 @@ body {
     width: 100%;
 }
 
+.carousel,
+.carousel-inner,
+.carousel-inner .item {
+    height: 100%;
+}
+
 header {
+
     text-align: center;
-    /*    background: #111111;*/
+    background: #111111;
     width: 100%;
     display: table-cell;
     text-align: center;
     vertical-align: middle;
+
+}
+
+#container {
+    /*    background-attachment: fixed;*/
+    background: rgb(48, 48, 48);
+
+
+}
+
+.carousel {
+    width: 100vw;
 }
 
 #subheader {
     font-family: 'Lora', serif;
     font-size: 70%;
     font-weight: lighter;
-    color:#ffe4c9;    /*    background: #303030;*/
-    justify-content: center;
+    color: #ffe4c9;
+    background: #b52d38;
+    border: 2px solid #ffe4c9;
     width: 100%;
-    
+
+
 
     /*    border-bottom: 2px solid white;*/
 }
@@ -63,7 +82,7 @@ header {
     display: inline-flex;
     text-align: center;
     align-content: center;
-    margin: 75px 20px 0px 20px;
+    margin: 20px 20px 20px 20px;
     text-transform: uppercase;
     letter-spacing: 3px;
     padding-left: 3.2vw;
@@ -72,19 +91,20 @@ header {
 
 
 #subheader a:hover {
-    border-bottom: 0.1px solid white;
+    border-bottom: 4px solid white;
 }
 
 
 #subheader i {
     text-align: center;
     width: 100%;
-    font-size: 150%;
+    font-size: 100%;
     margin: 10px 0px 10px -6px;
 }
 
 
 #title {
+    background: rgb(48, 48, 48);
     display: flex;
     width: 100vw;
     font-family: 'Cedarville Cursive', cursive;
@@ -94,13 +114,9 @@ header {
     justify-content: center;
     position: relative;
     text-align: center;
-    /*
-        background-image: url(header.jpg);
-    background-size: cover;
-     <------ 
-    background-repeat: no-repeat;
-    background-position: center 30%;
-*/
+
+
+
     height: 130px;
 }
 
@@ -143,10 +159,10 @@ header {
     font-size: 14px;
     font-weight: bold;
     text-align: center;
-    /*    background: black;*/
     padding: 0;
     margin-top: 0;
     display: inline-block;
+    padding-bottom: 8vh;
 
 
 }
@@ -154,24 +170,18 @@ header {
 .menubar li {
 
     padding: 10px;
-    padding-right: 8vw;
+    padding-right: 4vw;
     /*    margin-right: 10vw;*/
-    padding-left: 8vw;
+    padding-left: 4vw;
     text-align: center;
     display: inline;
     cursor: pointer;
     position: relative;
     font-weight: 600;
-    
-    border: 2px solid white;
-    border-radius: 5px;
-
-
-
 }
 
 .menubar li a {
-    color:#ffffff;
+    color: #ffffff;
     font-weight: lighter;
     -webkit-font-smoothing: antialiased;
     text-decoration: none;
@@ -189,34 +199,72 @@ header {
 
 #banner {
     display: flex;
-    /*    background-image: url(christmas.jpg);*/
-    /*    background-size: cover;*/
-    /* <------ */
-    /*
-    background-repeat: no-repeat;
-    background-position: center 30%;
-*/
-    height: auto;
-    margin-top: 2vh;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-height: 100%;
+    flex-direction: column;
+
+}
+
+
+#middle_banner {
+
+    display: flex;
+    justify-content: center;
+
 }
 
 #banner_bogo {
+
     color: white;
-    font-weight: bol;
+    font-weight: bold;
     line-height: 25px;
     text-align: center;
-    justify-content: center;
-    display: inline-flex;
-    width: 100vw;
 }
 
 #banner_shop {
+    max-width: 50%;
     color: white;
     margin-top: 10px;
+    margin-bottom: 30px;
     text-align: center;
-    display: inline-flex;
-    width: 100vw;
 
+}
+
+#banner_shop a {
+    text-decoration: none;
+}
+
+#main_cap {
+    top: 30%;
+    bottom: auto;
+    left: auto;
+    right: auto;
+}
+
+#ncaa {
+    background-image: url(../images/ncaa.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+}
+
+#shop_now {
+    background-image: url(../images/christmas-1911637.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+}
+
+#scented_carousel {
+    background-image: url(../images/pexels-photo-580039.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
 }
 
 .btn-main {
@@ -236,19 +284,132 @@ header {
 }
 
 #sports {
-    display: inline-block;
-    height: 80vh;
+    display: flex;
+}
+
+/*footer*/
+.col_white_amrc {
+    color: #FFF;
 }
 
 footer {
-    position: absolute;
-    bottom: -50vh;
     width: 100%;
-    height: 100px;
-    background: rgb(48, 48, 48);
-    color: white;
+    background-color: #022b3a;
+    min-height: 250px;
+    padding: 10px 0px 25px 0px;
     text-align: center;
 }
+
+
+
+.pt2 {
+    padding-top: 40px;
+    margin-bottom: 20px;
+}
+
+footer p {
+    font-size: 13px;
+    color: #CCC;
+    padding-bottom: 0px;
+    margin-bottom: 8px;
+}
+
+.mb10 {
+    padding-bottom: 15px;
+}
+
+.footer_ul_amrc {
+    margin: 0px;
+    list-style-type: none;
+    font-size: 14px;
+    padding: 0px 0px 10px 0px;
+}
+
+.footer_ul_amrc li {
+    padding: 0px 0px 5px 0px;
+}
+
+.footer_ul_amrc li a {
+    color: #CCC;
+}
+
+.footer_ul_amrc li a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.padding-right {
+    padding-right: 10px;
+}
+
+.footer_ul2_amrc {
+    margin: 0px;
+    list-style-type: none;
+    padding: 0px;
+}
+
+.footer_ul2_amrc li p {
+    display: table;
+}
+
+.footer_ul2_amrc li a:hover {
+    text-decoration: none;
+}
+
+.footer_ul2_amrc li i {
+    margin-top: 5px;
+}
+
+.bottom_border {
+    border-bottom: 1px solid #323f45;
+    padding-bottom: 20px;
+}
+
+.foote_bottom_ul_amrc {
+    list-style-type: none;
+    padding: 0px;
+    display: table;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-left: auto;
+}
+
+.foote_bottom_ul_amrc li {
+    display: inline;
+}
+
+.foote_bottom_ul_amrc li a {
+    color: #999;
+    margin: 0 12px;
+}
+
+.social_footer_ul {
+    display: table;
+    margin: 15px auto 0 auto;
+    list-style-type: none;
+}
+
+.social_footer_ul li {
+    padding-left: 20px;
+    padding-top: 10px;
+    float: left;
+}
+
+.social_footer_ul li a {
+    color: #CCC;
+    border: 1px solid #CCC;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.social_footer_ul li i {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+
 
 
 /* Smartphones (portrait and landscape) ----------- */
@@ -273,7 +434,7 @@ footer {
     }
 
     #subheader {
-        font-size: 65%;
+        font-size: 60%;
     }
 
     #sports {
@@ -281,9 +442,8 @@ footer {
     }
 
     .slicknav_menu {
-        text-align: left;
+        text-align: center;
         display: block;
-        float: left;
         width: 100%;
     }
 
@@ -365,7 +525,7 @@ footer {
     #subheader {
         font-size: 50%;
     }
-    
+
     #subheader a {
         margin: 7px;
     }
@@ -375,9 +535,8 @@ footer {
     }
 
     .slicknav_menu {
-        text-align: left;
+        text-align: center;
         display: block;
-        float: left;
         width: 100%;
     }
 
@@ -421,7 +580,7 @@ footer {
 
     /* Styles */
 
-    #sports {    
+    #sports {
         display: block;
     }
 
@@ -466,6 +625,7 @@ footer {
     .slicknav_menu {
         display: block;
     }
+
     #sports {
         display: block;
     }
@@ -530,7 +690,7 @@ footer {
     }
 
     #mobilemenu {
-        text-align: left;
+        text-align: center;
     }
 
     .slicknav_menu {
@@ -600,9 +760,11 @@ footer {
     #banner_bogo {
         width: 100vw;
     }
+
     .menubar {
         display: none;
     }
+
     .slicknav_menu {
         display: block;
     }
@@ -618,16 +780,6 @@ footer {
 
 /* Desktops and laptops ----------- */
 @media only screen and (min-width : 1287px) {
-
-    #banner_shop {
-
-        width: 100vw;
-    }
-
-    #banner_bogo {
-        width: 100vw;
-    }
-
 
     #sports {
         display: inline-block;
@@ -651,7 +803,7 @@ footer {
     }
 
     .slicknav_nav a {
-        text-align: left;
+        text-align: center;
         display: inline-block;
     }
 
