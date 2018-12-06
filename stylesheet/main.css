@@ -33,7 +33,11 @@ body {
     /*    margin-top: -4px;*/
     width: 100%;
 }
-
+.row {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
 .carousel,
 .carousel-inner,
 .carousel-inner .item {
@@ -89,6 +93,9 @@ header {
     padding-right: 4vw;
 }
 
+.sub {
+    font-size: 130%;
+}
 
 #subheader a:hover {
     border-bottom: 4px solid white;
@@ -433,8 +440,8 @@ footer p {
         display: flex;
     }
 
-    #subheader {
-        font-size: 60%;
+    .sub {
+        font-size: 120%;
     }
 
     #sports {
