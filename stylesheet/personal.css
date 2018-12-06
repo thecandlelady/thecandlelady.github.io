@@ -47,7 +47,10 @@ header {
 .sub {
     font-size: 150%;
 }
-
+#container {
+    display: flex;
+    justify-content: center;
+}
 #subheader {
     font-family: 'Lora', serif;
     font-size: 70%;
