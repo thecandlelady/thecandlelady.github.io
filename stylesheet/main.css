@@ -293,6 +293,21 @@ header {
 #sports {
     display: flex;
 }
+.alt_banner {
+    display: none;
+    padding-top: 25vh;
+}
+.alt_banner a {
+    text-decoration: none;
+}
+.alt_banner_scented {
+    display: flex;
+    justify-content: center;
+    padding-top: 33vh;
+}
+.alt_banner_scented a {
+    text-decoration: none;
+}
 
 /*footer*/
 .col_white_amrc {
@@ -447,6 +462,9 @@ footer p {
     #sports {
         display: none;
     }
+    .alt_banner {
+        display: flex;
+    }
 
     .slicknav_menu {
         text-align: center;
@@ -482,6 +500,9 @@ footer p {
 
     #sports {
         display: none;
+    }
+    .alt_banner {
+        display: flex;
     }
 
     .powr-mailing-list {
@@ -540,6 +561,9 @@ footer p {
     #sports {
         display: none;
     }
+    .alt_banner {
+        display: flex;
+    }
 
     .slicknav_menu {
         text-align: center;
@@ -590,6 +614,9 @@ footer p {
     #sports {
         display: block;
     }
+    .alt_banner {
+        display: flex;
+    }
 
     #banner {
         text-align: center;
@@ -635,6 +662,9 @@ footer p {
 
     #sports {
         display: block;
+    }
+    .alt_banner {
+        display: flex;
     }
 }
 
@@ -715,7 +745,9 @@ footer p {
     #sports {
         display: none;
     }
-
+    .alt_banner {
+        display: flex;
+    }
     .powr-mailing-list {
         display: none;
     }
@@ -759,6 +791,9 @@ footer p {
     #sports {
         display: none;
     }
+    .alt_banner {
+        display: flex;
+    }
 
     #banner_shop {
         width: 100vw;
@@ -790,6 +825,9 @@ footer p {
 
     #sports {
         display: inline-block;
+    }
+    .alt_banner {
+        display: flex;
     }
 
     .menubar {
